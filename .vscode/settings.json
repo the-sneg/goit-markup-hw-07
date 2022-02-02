@@ -1,0 +1,48 @@
+"liveSassCompile.settings.formats": [
+    // This is the default.
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        // null for all three -> denotes the same path as the SASS file
+        "savePath": null,
+        "savePathSegmentKeys": null,
+        "savePathReplaceSegmentsWith": null
+    },
+    // You can add more
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        // / -> denotes relative to the workspace root
+        "savePath": "/dist/css"
+    },
+    // More Complex
+    // (See issue 26: https://github.com/ritwickdey/vscode-live-sass-compiler/issues/26)
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        // ~ -> denotes relative to each sass file
+        "savePath": "~/../css/"
+    },
+    // Segment replacement example
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        // "/Assets/SCSS/main.scss" -> translates to "/Assets/Style/main.css"
+        // "/Assets/_SASS/main.sass" -> translates to "/Assets/Style/main.css"
+        "savePathSegmentKeys": [
+            "SCSS",
+            "_SASS"
+        ],
+        "savePathReplaceSegmentsWith": "Style",
+        // Segment replacement ONLY applied if "savePath" is null
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            // "/Assets/SCSS/main.scss" -> translates to "/dist/css/main.css" NOT "/Assets/Style/main.css"
+            "savePath": "/dist/css",
+            "savePathSegmentKeys": [
+                "SCSS"
+            ],
+            "savePathReplaceSegmentsWith": "Style"
+        }
+    ]
