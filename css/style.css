@@ -258,11 +258,11 @@ img {
   background-image: url(../images/checkbox.svg);
 }
 
-.modal__checkbox:checked + .checkbox-decor {
+.modal__checkbox:checked + .modal__checkbox-decor {
   background-image: url(../images/check.svg);
 }
 
-.modal__checkbox:focus + .checkbox__decor {
+.modal__checkbox:focus + .modal__checkbox-decor {
   outline-style: auto;
   outline-color: var(--accent-color);
 }
