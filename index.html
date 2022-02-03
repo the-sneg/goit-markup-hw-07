@@ -16,29 +16,29 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="header">
+      <div class="header__container container">
         <nav class="site-nav">
-          <a class="logo" href="./index.html">Web<span class="logo-black">Studio</span> </a>
-          <ul class="site-nav-list">
-            <li class="element"><a class="header-nav current" href="./index.html">Студия</a></li>
-            <li class="element"><a class="header-nav" href="./portfolio.html">Портфолио</a></li>
-            <li class="element"><a class="header-nav" href="">Контакты</a></li>
+          <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span> </a>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link current" href="./index.html">Студия</a></li>
+            <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="site-contacts">
-          <li class="element mail">
-            <a class="header-contacts" href="mailto:info@devstudio.com">
-              <svg class="mail-icon" width="16px" height="12px">
+        <ul class="contacts">
+          <li class="contacts__item mail">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon mail-icon" width="16px" height="12px">
                 <use href="./images/symbol-defs-opt.svg#mail"></use>
               </svg>
 
               info@devstudio.com</a
             >
           </li>
-          <li class="element">
-            <a class="header-contacts" href="tel:+380961111111">
-              <svg class="tel-icon" width="10px" height="16px">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon tel-icon" width="10px" height="16px">
                 <use href="./images/symbol-defs-opt.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -51,61 +51,61 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="primary-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="close-btn" data-modal-close>
-                <svg class="close-icon" width="18px" height="18px">
+              <button class="modal__close-btn" data-modal-close>
+                <svg class="moal__close-icon" width="18px" height="18px">
                   <use href="./images/symbol-defs-opt.svg#close-black"></use>
                 </svg>
               </button>
-              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-              <form class="modal-form">
-                <ul class="modal-list">
-                  <li class="modal-list-element">
-                    <label class="list-lable" for="name">Имя</label>
-                    <input class="modal-input" type="text" name="name" id="name" />
-                    <svg class="modal-list-icon" width="18px" height="18px">
+              <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+              <form class="modal__form">
+                <ul class="modal__list">
+                  <li class="modal__item">
+                    <label class="modal__input-lable" for="name">Имя</label>
+                    <input class="modal__input" type="text" name="name" id="name" />
+                    <svg class="modal__input-icon" width="18px" height="18px">
                       <use href="./images/symbol-defs-opt.svg#person-black"></use>
                     </svg>
                   </li>
-                  <li class="modal-list-element">
-                    <label class="list-lable" for="phone">Телефон</label>
-                    <input class="modal-input" type="tel" name="phone" id="phone" />
-                    <svg class="modal-list-icon" width="18px" height="18px">
+                  <li class="modal__item">
+                    <label class="modal__input-lable" for="phone">Телефон</label>
+                    <input class="modal__input" type="tel" name="phone" id="phone" />
+                    <svg class="modal__input-icon" width="18px" height="18px">
                       <use href="./images/symbol-defs-opt.svg#phone-black"></use>
                     </svg>
                   </li>
-                  <li class="modal-list-element">
-                    <label class="list-lable" for="mail">Почта</label>
-                    <input class="modal-input" type="email" name="mail" id="mail" />
-                    <svg class="modal-list-icon" width="18px" height="18px">
+                  <li class="modal__item">
+                    <label class="modal__input-lable" for="mail">Почта</label>
+                    <input class="modal__input" type="email" name="mail" id="mail" />
+                    <svg class="modal__input-icon" width="18px" height="18px">
                       <use href="./images/symbol-defs-opt.svg#email-black"></use>
                     </svg>
                   </li>
-                  <li class="modal-list-element">
-                    <label class="list-lable" for="coment">Комментарий</label>
+                  <li class="modal__item">
+                    <label class="modal__input-lable" for="coment">Комментарий</label>
                     <input
                       type="text"
-                      class="coment"
+                      class="modal__input coment"
                       name="coment"
                       id="coment"
                       placeholder="Введите текст"
                     />
                   </li>
                 </ul>
-                <label class="agreement">
-                  <input type="checkbox" name="checkbox" class="modal-checkbox" />
-                  <span class="checkbox-decor"></span>
+                <label class="modal__agreement">
+                  <input type="checkbox" name="checkbox" class="modal__checkbox" />
+                  <span class="modal__checkbox-decor"></span>
                   Соглашаюсь с рассылкой и принимаю
-                  <a href="" class="agreement-link"> Условия договора </a>
+                  <a href="" class="moal__agreement-link"> Условия договора </a>
                 </label>
-                <button class="modal-button" type="submit">Отправить</button>
+                <button class="modal__button" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -114,52 +114,52 @@
 
       <section class="features section">
         <div class="container">
-          <h2 class="features-title">Особенности</h2>
-          <ul class="features-list">
-            <li class="element">
-              <div class="features-lable">
-                <svg class="features-icon" width="70px" height="70px">
+          <h2 class="features__hiden-title">Особенности</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__lable">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/symbol-defs-opt.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">Внимание к деталям</h3>
-              <p class="description">
+              <h3 class="features__lable-title">Внимание к деталям</h3>
+              <p class="features__lable-description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
 
-            <li class="element">
-              <div class="features-lable">
-                <svg class="features-icon" width="70px" height="70px">
+            <li class="features__item">
+              <div class="features__lable">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/symbol-defs-opt.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="title">Пунктуальность</h3>
-              <p class="description">
+              <h3 class="features__lable-title">Пунктуальность</h3>
+              <p class="features__lable-description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
 
-            <li class="element">
-              <div class="features-lable">
-                <svg class="features-icon" width="70px" height="70px">
+            <li class="features__item">
+              <div class="features__lable">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/symbol-defs-opt.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">Планирование</h3>
-              <p class="description">
+              <h3 class="features__lable-title">Планирование</h3>
+              <p class="features__lable-description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
 
-            <li class="element">
-              <div class="features-lable">
-                <svg class="features-icon" width="70px" height="70px">
+            <li class="features__item">
+              <div class="features__lable">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/symbol-defs-opt.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">Современные технологии</h3>
-              <p class="description">
+              <h3 class="features__lable-title">Современные технологии</h3>
+              <p class="features__lable-description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
