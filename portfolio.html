@@ -15,31 +15,31 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="header">
+      <div class="header__container container">
         <nav class="site-nav">
-          <a class="logo" href="./index.html">Web<span class="logo-black">Studio</span> </a>
-          <ul class="site-nav-list">
-            <li class="element"><a class="header-nav" href="./index.html">Студия</a></li>
-            <li class="element">
-              <a class="header-nav current" href="./portfolio.html">Портфолио</a>
+          <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span> </a>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="./index.html">Студия</a></li>
+            <li class="menu__item">
+              <a class="menu__link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="element"><a class="header-nav" href="">Контакты</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="site-contacts">
-          <li class="element mail">
-            <a class="header-contacts" href="mailto:info@devstudio.com">
-              <svg class="mail-icon" width="16px" height="12px">
+        <ul class="contacts">
+          <li class="contacts__item mail">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon mail-icon" width="16px" height="12px">
                 <use href="./images/symbol-defs-opt.svg#mail"></use>
               </svg>
 
               info@devstudio.com</a
             >
           </li>
-          <li class="element">
-            <a class="header-contacts" href="tel:+380961111111">
-              <svg class="tel-icon" width="10px" height="16px">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon tel-icon" width="10px" height="16px">
                 <use href="./images/symbol-defs-opt.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -258,49 +258,51 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="footer">
       <div class="container">
-        <div class="adress-container">
-          <a class="logo" href="./index.html">Web<span class="logo-white">Studio</span> </a>
-          <address class="footer-address">
-            <p class="address-paragraph">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer-site-contacts">
-              <li class="element">
-                <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="address__wrap">
+          <a class="logo" href="./index.html">Web<span class="logo__white">Studio</span> </a>
+          <address class="address">
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer__contacts">
+              <li class="footer__item">
+                <a class="footer__contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="element">
-                <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer__item">
+                <a class="footer__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="join">
-          <p class="join-title">присоединяйтесь</p>
+          <p class="join__title">присоединяйтесь</p>
           <ul class="social">
-            <li class="element">
-              <a class="link" href="">
-                <svg class="social-icon" width="20px" height="20px">
+            <li class="social__item">
+              <a class="social__link social__link--footer" href="">
+                <svg class="social__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs-opt.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="element">
-              <a class="link" href="">
-                <svg class="social-icon" width="20px" height="20px">
+            <li class="social__item">
+              <a class="social__link social__link--footer" href="">
+                <svg class="social__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs-opt.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="element">
-              <a class="link" href="">
-                <svg class="social-icon" width="20px" height="20px">
+            <li class="social__item">
+              <a class="social__link social__link--footer" href="">
+                <svg class="social__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs-opt.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="element">
-              <a class="link" href="">
-                <svg class="social-icon" width="20px" height="20px">
+            <li class="social__item">
+              <a class="social__link social__link--footer" href="">
+                <svg class="social__icon" width="20px" height="20px">
                   <use href="./images/symbol-defs-opt.svg#linkedin"></use>
                 </svg>
               </a>
@@ -308,12 +310,12 @@
           </ul>
         </div>
         <div class="subscribe">
-          <p class="subscribe-title">Подпишитесь на рассылку</p>
-          <form class="subscribe-form">
-            <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
-            <button class="subscribe-button" type="submit">
+          <p class="subscribe__title">Подпишитесь на рассылку</p>
+          <form class="subscribe__form">
+            <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
+            <button class="subscribe__button" type="submit">
               Подписаться
-              <svg class="subscribe-icon" width="24px" height="24px">
+              <svg class="subscribe__icon" width="24px" height="24px">
                 <use href="images/symbol-defs-opt.svg#send"></use>
               </svg>
             </button>
