@@ -496,7 +496,7 @@ img {
 
 /* --------------------------PORTFOLIO--------------------- */
 
-.portfolio-section-title {
+.portfolio__title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -509,21 +509,21 @@ img {
   margin: -1px;
 }
 
-.filters-buttons {
+.filters {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filters-buttons .element {
+.filters__item {
   margin-right: 8px;
 }
 
-.filters-buttons .element:last-child {
+.filters__item:last-child {
   margin-right: 0;
 }
 
-.button {
+.filter__button {
   cursor: pointer;
   background-color: var(--secondary-bg-color);
   padding: 6px 22px;
@@ -539,44 +539,44 @@ img {
   transition-property: background-color, color, box-shadow;
 }
 
-.current-button {
+.filter__button--current-button {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button:hover,
-.button:focus {
+.filter__button:hover,
+.filter__button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.example-card {
+.example__item {
   width: 370px;
   background: var(--white-color);
   margin-top: 30px;
   margin-right: 30px;
 }
 
-.card-link {
+.example__link {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
 }
 
-.card-link:hover,
-.card-link:focus {
+.example__link:hover,
+.example__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.example-card:nth-child(3n) {
+.example__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.example-card:nth-child(-n + 3) {
+.example__item:nth-child(-n + 3) {
   margin-top: 0;
 }
 
@@ -586,12 +586,12 @@ img {
   padding: 20px 24px;
 }
 
-.example-cards {
+.example {
   display: flex;
   flex-wrap: wrap;
 }
 
-.example-img {
+.example__img {
   display: block;
 }
 
@@ -610,12 +610,12 @@ img {
   color: var(--primary-text-color);
 }
 
-.card-link:hover .overlay-text,
-.card-link:focus .overlay-text {
+.example__link:hover .overlay-text,
+.example__link:focus .overlay-text {
   transform: translateY(-294px);
 }
 
-.overlay {
+.example__overlay-wrap {
   height: 294px;
   overflow: hidden;
 }
