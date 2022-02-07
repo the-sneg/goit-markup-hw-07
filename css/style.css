@@ -580,7 +580,7 @@ img {
   margin-top: 0;
 }
 
-.example-card-info {
+.example__info {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
@@ -595,7 +595,7 @@ img {
   display: block;
 }
 
-.example-cards .title {
+.example__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -604,14 +604,14 @@ img {
   margin-bottom: 4px;
 }
 
-.example-cards .description {
+.example__description {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
 }
 
-.example__link:hover .overlay-text,
-.example__link:focus .overlay-text {
+.example__link:hover .example__overlay-text,
+.example__link:focus .example__overlay-text {
   transform: translateY(-294px);
 }
 
@@ -620,7 +620,7 @@ img {
   overflow: hidden;
 }
 
-.overlay-text {
+.example__overlay-text {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
