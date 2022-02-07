@@ -223,7 +223,7 @@ img {
 }
 
 .modal__input:focus,
-.coment:focus {
+.modal__input-coment:focus {
   border-color: var(--accent-color);
 }
 
@@ -231,7 +231,7 @@ img {
   fill: var(--accent-color);
 }
 
-.coment {
+.modal__input-coment {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -342,7 +342,7 @@ img {
   line-height: 1.7;
 }
 
-.whatwedo.section {
+.whatwedo {
   padding-top: 0;
 }
 
@@ -474,12 +474,12 @@ img {
   color: var(--icons-white-color);
 }
 
-.mail-icon {
+.contacts__mail-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.tel-icon {
+.contacts__tel-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -664,7 +664,7 @@ header {
   letter-spacing: 0.02em;
 }
 
-.contacts .mail {
+.contacts__mail {
   margin-right: 30px;
 }
 
@@ -681,14 +681,6 @@ header {
 
 .logo__black {
   color: var(--logo-black-color);
-}
-
-.menu .current {
-  color: var(--accent-color);
-}
-
-.menu__link.current::after {
-  opacity: 1;
 }
 
 .menu__link {
@@ -712,6 +704,14 @@ header {
   border: 2px solid var(--accent-color);
   border-radius: 2px;
   opacity: 0;
+}
+
+.menu__link--current {
+  color: var(--accent-color);
+}
+
+.menu__link--current::after {
+  opacity: 1;
 }
 
 .menu__item {
@@ -793,7 +793,7 @@ header {
   background-color: var(--first-bg-color);
 }
 
-.footer .logo {
+.logo__footer {
   display: block;
   margin-right: 0;
   padding: 0;
@@ -833,7 +833,7 @@ header {
   color: var(--accent-color);
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -859,36 +859,6 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color;
 }
-
-/* .join .social {
-  display: flex;
-  padding-right: 0;
-  padding-left: 0;
-  margin-top: 0px;
-} */
-
-/* .join .link {
-  color: var(--icons-white-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
-}
-
-.join .social-icon {
-  fill: currentColor;
-}
-
-.join .social .link:hover,
-.join .social .link:focus {
-  background-color: var(--accent-color);
-} */
 
 .subscribe {
   margin-left: auto;

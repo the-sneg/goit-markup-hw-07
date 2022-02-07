@@ -21,15 +21,17 @@
         <nav class="site-nav">
           <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span> </a>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link current" href="./index.html">Студия</a></li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="./index.html">Студия</a>
+            </li>
             <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
             <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="contacts__item mail">
+          <li class="contacts__item contacts__mail">
             <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon mail-icon" width="16px" height="12px">
+              <svg class="contacts__icon contacts__mail-icon" width="16px" height="12px">
                 <use href="./images/symbol-defs-opt.svg#mail"></use>
               </svg>
 
@@ -38,7 +40,7 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon tel-icon" width="10px" height="16px">
+              <svg class="contacts__icon contacts__tel-icon" width="10px" height="16px">
                 <use href="./images/symbol-defs-opt.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -92,7 +94,7 @@
                     <label class="modal__input-lable" for="coment">Комментарий</label>
                     <input
                       type="text"
-                      class="modal__input coment"
+                      class="modal__input-coment"
                       name="coment"
                       id="coment"
                       placeholder="Введите текст"
@@ -405,9 +407,11 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container container">
         <div class="address__wrap">
-          <a class="logo" href="./index.html">Web<span class="logo__white">Studio</span> </a>
+          <a class="logo logo__footer" href="./index.html"
+            >Web<span class="logo__white">Studio</span>
+          </a>
           <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer__contacts">
