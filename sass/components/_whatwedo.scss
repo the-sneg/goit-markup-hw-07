@@ -17,10 +17,10 @@
 .whatwedo__item {
   margin-right: 30px;
   position: relative;
-}
 
-.whatwedo__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .whatwedo__lable {

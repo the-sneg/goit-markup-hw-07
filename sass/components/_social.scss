@@ -8,10 +8,10 @@
 
 .social__item {
   margin-right: 10px;
-}
 
-.social__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -25,10 +25,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color;
-}
 
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent-color);
-  color: var(--icons-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--icons-white-color);
+  }
 }

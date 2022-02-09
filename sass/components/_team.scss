@@ -16,10 +16,10 @@
 
 .team__card {
   margin-right: 30px;
-}
 
-.team__card:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .team__card-title {

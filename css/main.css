@@ -268,8 +268,7 @@ img {
   transition-property: background-color, color;
 }
 
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
   color: var(--icons-white-color);
 }
