@@ -27,10 +27,10 @@
 .features__item {
   margin-right: 30px;
   max-width: 270px;
-}
 
-.features__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .features__lable-description {

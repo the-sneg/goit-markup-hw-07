@@ -24,20 +24,20 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, border-color;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .clients__lable {
   margin-right: 30px;
-}
 
-.clients__lable:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .clients__icon {
