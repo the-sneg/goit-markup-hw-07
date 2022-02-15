@@ -3,12 +3,7 @@ header {
 }
 
 .header {
-  display: flex;
-  align-items: center;
-}
-
-.header__container {
-  display: flex;
+  display: block;
 }
 
 .site-nav {
@@ -20,26 +15,6 @@ header {
 .menu {
   display: flex;
   letter-spacing: 0.02em;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-}
-
-.contacts__mail {
-  margin-right: 30px;
-}
-
-.contacts__mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts__tel-icon {
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 .menu__link {
@@ -59,9 +34,12 @@ header {
     left: 0;
     bottom: -1px;
     width: 100%;
-    border: 2px solid var(--accent-color);
-    border-radius: 2px;
     opacity: 0;
+
+    display: block;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
   }
 
   &:focus,
@@ -84,24 +62,5 @@ header {
 
   &:last-child {
     margin-right: 0px;
-  }
-}
-
-.contacts__link {
-  color: var(--second-icons-color);
-  font-weight: 500;
-  line-height: 1.2;
-  color: var(--primary-text-color);
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-
-  &:focus,
-  &:hover {
-    color: var(--accent-color);
   }
 }
